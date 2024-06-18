@@ -99,11 +99,8 @@ contents.each do |row|
 
   form_letter = erb_template.result(binding)
 
-  #save_thank_you_letter(id,form_letter)
-  puts "#{regdate} & #{regtime}"
+  save_thank_you_letter(id,form_letter)
 end
 
 puts find_pop_time(contents)
 puts find_pop_day(contents)
-
-
